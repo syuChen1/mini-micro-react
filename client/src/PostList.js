@@ -18,7 +18,7 @@ const PostList = () => {
   const renderedPosts = Object.values(posts).map((post) => {
     return (
       <div
-        className='card'
+        className='card p-3'
         style={{ width: '30%', marginBottom: '20px' }}
         key={post.id}
       >
