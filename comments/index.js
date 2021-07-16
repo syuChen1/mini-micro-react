@@ -29,7 +29,7 @@ app.post('/posts/:id/comments', async (req, res) => {
       data: {
         id: commentId,
         content,
-        postId: req.param.id,
+        postId: req.params.id,
       },
     })
     .catch((error) => console.log(error));
